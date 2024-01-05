@@ -41,6 +41,7 @@ php artisan key:generate
 ```
 
 7. Create new database named 'nano_feed' in MySQL
+
 8. Change Database to ('nano_feed') in .env
 
 ```Example
@@ -49,7 +50,13 @@ DB_DATABASE=nano_feed
 
 9. Start apache & mysql in xampp if you using windows, and lammp if you using linux.
 
-10. Run Laravel project
+10. Migrate Database
+
+```shell
+php artisan migrate
+```
+
+11. Run Laravel project
 
 ```shell
 php artisan serve
